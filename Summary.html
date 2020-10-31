@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Vizz</title>
+  <!-- linking style sheets and reset file -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="landing_styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">>
+</head>
+
+<body>
+<!-- div container for nav bar -->
+  <div class="container">
+    <nav class="navbar">
+
+        <!-- list of nav bar options -->
+      <ul>
+        <li>
+          <a href="landing_index.html">Weather Vizz</a>
+        </li>
+        
+        <li></li>
+
+        <li>
+          <a href="cities.csv">Data</a>
+        </li>
+
+      </ul>
+<!-- drop down menu -->
+      <select id="nav-select">
+        <option value="Plots">Plots</option>
+        <option value="Latitude">Latitude</option>
+        <option value="Humidity">Humidity</option>
+        <option value="Cloudiness">Cloudiness</option>
+        <option value="Wind Speed">Wind Speed</option>
+      </select>
+
+      <div class="clearfix"></div>
+    </nav>
+    <header class="header">
+      <h1>Comparison</h1>
+    </header>
+    <main>
+      
+      
+<!-- 
+                        creating grid col to hold vizz -->
+        
+          <div class="container">
+            <div class="row">
+
+                <!-- column 1  -->
+                <div class="col-lg-6">
+
+                        <img class="resize_s" src="assets_images/City_Lat_vs_Cloudiness.png">
+                       
+                    </div>
+
+                    <!-- column 2  -->
+                    <div class="col-lg-6">
+
+                        <img class="resize_s" src="assets_images/City_Lat_vs_Wind_Speed.png">
+
+                    </div>
+
+                    <!-- second row column 1 -->
+                    <div class="col-lg-6">
+    
+                            <img class="resize_s" src="assets_images/City_Lat_vs_Humidity.png">
+                           
+                        </div>
+    
+                        <!-- second row column 2 -->
+                        <div class="col-lg-6">
+    
+                            <img class="resize_s" src="assets_images/City_Lat_vs_Max_Temp.png">
+
+                        </div>
+<!-- Closing grid + row -->
+          </div>
+</div>
+
+    </main>
+  </div>
+
+</body>
+
+</html>

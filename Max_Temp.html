@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Vizz</title>
+  <!-- linking style sheets and reset file -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="landing_styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">>
+</head>
+
+<body>
+<!-- div container for nav bar -->
+  <div class="container">
+    <nav class="navbar">
+<!-- list of nav bar options -->
+      <ul>
+        <li>
+          <a href="landing_index.html">Weather Vizz</a>
+        </li>
+        
+        <li></li>
+
+        <li>
+          <a href="cities.csv">Data</a>
+        </li>
+
+        <li>
+          <a href="Summary.html">Comparison</a>
+        </li>
+      </ul>
+<!-- drop down menu -->
+      <select id="nav-select">
+        <option value="Plots">Plots</option>
+        <option value="Latitude">Latitude</option>
+        <option value="Humidity">Humidity</option>
+        <option value="Cloudiness">Cloudiness</option>
+        <option value="Wind Speed">Wind Speed</option>
+      </select>
+
+      <div class="clearfix"></div>
+    </nav>
+    <header class="header">
+      <h1>Latitude vs Max Tempurature</h1>
+    </header>
+    <main>
+      
+      <!-- 
+                        creating span col to hold vizz -->
+                        <span class="center-col services-section img">
+
+                        <img src="assets_images/City_Lat_vs_Max_Temp.png">
+
+                        </span>
+                    
+  <!-- 
+                        creating span col to hold paragraph -->
+        <span class="center-col services-section img">
+      <section class="posts">
+        <article class="post">
+          <h3><b>Analysis</b></h3>
+          <p> This visualization compares the max tempurature by the latitude of the city. Based on what we are seeing it looks like latitude has a strong correlation on the tempurature of a given city.
+             Cities closes to the equator have the highest tempuratures on average, with cities more than 40 degrees in either direction of the equator having a tempurature below 50 degrees on average.
+             Suprisingly, the western hemiphere is home to most of the extremely cold cities with a handle full having tempuratures below 0.
+              
+          </p>
+        </article>
+      </section>
+        </span>
+           
+    </main>
+  </div>
+
+</body>
+
+</html>
